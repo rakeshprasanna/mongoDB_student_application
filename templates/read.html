@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Student Information</h1>
+    <ul>
+        <li><strong>SRN:</strong> {{ student['SRN'] }}</li>
+        <li><strong>Sname:</strong> {{ student['Sname'] }}</li>
+        <li><strong>Degree:</strong> {{ student['Degree'] }}</li>
+        <li><strong>Sem:</strong> {{ student['Sem'] }}</li>
+        <li><strong>CGPA:</strong> {{ student['CGPA'] }}</li>
+    </ul>
+    <br>
+    <a href="{{ url_for('update', student_id=student['_id']) }}">Update</a> |
+    <a href="{{ url_for('delete', student_id=student['_id']) }}" onclick="return confirm('Are you sure you want to delete this student?')">Delete</a>
+    <br>
+    <a href="{{ url_for('index') }}">Back</a>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

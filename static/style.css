@@ -1,0 +1,77 @@
+/* Global styles */
+
+body {
+  font-family: Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", sans-serif;
+  margin: 20px;
+  background-color: #f8f8f8;
+  color: #222;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+/* Table styles */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Link styles */
+
+a {
+  color: #2196f3;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #1976d2;
+}
+
+/* Additional styles */
+
+.button {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #2196f3;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #1976d2;
+}
