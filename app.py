@@ -2,15 +2,15 @@ from flask import Flask, render_template, redirect, request, url_for
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 
-# Initialize Flask app
+
 app = Flask(__name__)
 
-# Connect to MongoDB
+
 client = MongoClient("mongodb://localhost:27017/")
 db = client["student_db"]
 collection = db["students"]
 
-# Define routes for CRUD operations
+
 
 @app.route("/")
 def index():

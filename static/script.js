@@ -1,4 +1,4 @@
-// Get all students
+
 function getStudents() {
     fetch("/")
       .then((response) => response.json())
@@ -23,7 +23,7 @@ function getStudents() {
       });
   }
   
-  // Add student
+
   const studentForm = document.getElementById("student-form");
   studentForm.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -48,7 +48,7 @@ function getStudents() {
       });
   });
   
-  // Edit student
+  
   function editStudent(srn) {
     fetch(`/student/${srn}`)
       .then((response) => response.json())
@@ -61,7 +61,7 @@ function getStudents() {
       });
   }
   
-  // Delete student
+  
   function deleteStudent(srn) {
     if (confirm(`Are you sure you want to delete student with SRN ${srn}?`)) {
       fetch(`/student/${srn}`, {
@@ -75,6 +75,6 @@ function getStudents() {
     }
   }
   
-  // Get students on page load
+
   getStudents();
   

@@ -1,4 +1,4 @@
-/* Global styles */
+
 
 body {
   font-family: Roboto, Oxygen,
@@ -22,7 +22,7 @@ h2 {
   font-size: 1.5em;
 }
 
-/* Table styles */
+
 
 table {
   border-collapse: collapse;
@@ -46,7 +46,7 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-/* Link styles */
+
 
 a {
   color: #2196f3;
@@ -58,7 +58,7 @@ a:hover {
   color: #1976d2;
 }
 
-/* Additional styles */
+
 
 .button {
   display: inline-block;
