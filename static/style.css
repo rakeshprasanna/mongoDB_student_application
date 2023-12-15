@@ -1,77 +1,125 @@
-
+/* Global styles */
 
 body {
-  font-family: Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", sans-serif;
+  font-family: Ubuntu Monospace, sans-serif;
   margin: 20px;
-  background-color: #f8f8f8;
-  color: #222;
+  background-color: #252b33; /* Deep Space Blue */
+  color: #f8f9fa; /* Moonbeam */
+  transition: background-color 0.3s ease-in-out;
 }
 
 h1, h2 {
   margin-bottom: 10px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2;
-}
-
-h1 {
-  font-size: 2em;
+  color: #f8f9fa;
+  transition: color 0.3s ease-in-out;
 }
 
 h2 {
   font-size: 1.5em;
 }
 
+a {
+  color: #64b5f6; /* Cyber Teal */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
 
+a:hover {
+  color: #47a3ff; /* Electric Blue */
+}
+
+/* Table styles */
 
 table {
   border-collapse: collapse;
   width: 100%;
   border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #33373e; /* Dark Space Gray */
+  animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 th, td {
   padding: 8px 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #42464e; /* Nebula Gray */
   text-align: left;
+  color: #f8f9fa;
 }
 
 th {
-  background-color: #eee;
+  background-color: #33373e;
   font-weight: bold;
 }
 
 tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #373b41; /* Asteroid Gray */
 }
 
+/* Form styles */
 
-
-a {
-  color: #2196f3;
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
+form {
+  background-color: #33373e;
+  border-radius: 5px;
+  padding: 15px;
+  animation: fade-in 0.5s ease-in-out;
 }
 
-a:hover {
-  color: #1976d2;
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #f8f9fa;
 }
 
+input, textarea {
+  background-color: #373b41;
+  border: 1px solid #42464e;
+  border-radius: 3px;
+  padding: 8px;
+  color: #f8f9fa;
+  font-family: inherit;
+  animation: text-field-glow 0.5s ease-in-out;
+}
 
+@keyframes text-field-glow {
+  0% { box-shadow: none; }
+  50% { box-shadow: 0 0 5px #64b5f6; }
+  100% { box-shadow: none; }
+}
+
+input[type="submit"] {
+  background-color: #64b5f6;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  color: #f8f9fa;
+  font-weight: bold;
+  cursor: pointer;
+  animation: button-pulse 1s ease-in-out infinite;
+}
+
+@keyframes button-pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Additional styles */
 
 .button {
   display: inline-block;
   padding: 8px 15px;
   border-radius: 5px;
   border: 1px solid transparent;
-  background-color: #2196f3;
-  color: #fff;
+  background-color: #64b5f6;
+  color: #f8f9fa;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.button:hover {
-  background-color: #1976d2;
+  animation: button-pulse 1s ease;
 }
